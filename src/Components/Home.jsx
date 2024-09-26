@@ -27,19 +27,19 @@ const MyCarousel = () => {
             transitionTime={1500}
 
         >
-            <Box h={"75vh"} w={"100%"}>
+            <Box h={"60vh"} w={"100%"} display="flex" alignItems={"flex-start"}>
                 <Image src={img1} h={['75%', '100%']} w={'max-content'} right={"0"} objectFit={"contain"}/>
                 {/* <Heading {...headingOptions}> First</Heading> */}
             </Box>
-            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+            <Box h={"60vh"} w={"100%"} display="flex" alignItems={"flex-start"}>
                 <Image filter={'hue-rotate(-100deg)'} src={img3} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
                 {/* <Heading {...headingOptions}> Second</Heading> */}
             </Box>
-            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+            <Box h={"60vh"} w={"100%"} display="flex" alignItems={"flex-start"}>
                 <Image src={img1} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
                 {/* <Heading {...headingOptions}> Third</Heading> */}
             </Box>
-            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+            <Box h={"60vh"} w={"100%"} display="flex" alignItems={"flex-start"}>
                 <Image src={img3} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
                 {/* <Heading {...headingOptions}> Fourth</Heading> */}
             </Box>
