@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import img1 from "../assests/img1.png"
 import img2 from "../assests/img2.jpg"
-import img3 from "../assests/img3.jpg"
-import img4 from "../assests/img4.jpg"
+import img3 from "../assests/img3.png"
+import img4 from "../assests/img4.png"
 import img6 from "../assests/img6.jpg"
 const headingOptions = {
     position: "absolute",
@@ -27,21 +27,21 @@ const MyCarousel = () => {
             transitionTime={1500}
 
         >
-            <Box h={"100vh"} w={"full"} >
-                <Image src={img1} h={['75%', '100%']} w={'100%'} />
-                <Heading {...headingOptions}> First</Heading>
+            <Box h={"75vh"} w={"100%"}>
+                <Image src={img1} h={['75%', '100%']} w={'max-content'} right={"0"} objectFit={"contain"}/>
+                {/* <Heading {...headingOptions}> First</Heading> */}
             </Box>
-            <Box h={"100vh"} w={"full"} >
-                <Image filter={'hue-rotate(-100deg)'} src={img2} h={['75%', '100%']} w={'100%'} />
-                <Heading {...headingOptions}> Second</Heading>
+            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+                <Image filter={'hue-rotate(-100deg)'} src={img3} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
+                {/* <Heading {...headingOptions}> Second</Heading> */}
             </Box>
-            <Box h={"100vh"} w={"full"} >
-                <Image src={img3} h={['75%', '100%']} w={'100%'} />
-                <Heading {...headingOptions}> Third</Heading>
+            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+                <Image src={img1} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
+                {/* <Heading {...headingOptions}> Third</Heading> */}
             </Box>
-            <Box h={"100vh"} w={"full"} >
-                <Image src={img4} h={['75%', '100%']} w={'100%'} />
-                <Heading {...headingOptions}> Fourth</Heading>
+            <Box h={"75vh"} w={"100%"} display="flex" alignItems="center" justifyContent="center">
+                <Image src={img3} h={['75%', '100%']} w={'max-content'} objectFit={"contain"}/>
+                {/* <Heading {...headingOptions}> Fourth</Heading> */}
             </Box>
 
 
